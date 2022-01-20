@@ -5,13 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Flask",
+            "name": "Python: Flask day 1",
             "type": "python",
             "request": "launch",
             "module": "flask",
             "cwd": "${workspaceFolder}/days/1-flask",
             "env": {
                 "FLASK_APP": "demo.py",
+                "FLASK_ENV": "development"
+            },
+            "args": [
+                "run",
+                "--no-debugger"
+            ],
+            "jinja": true
+        },
+        {
+            "name": "Python: Flask day 3",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "cwd": "${workspaceFolder}/days/3-flask",
+            "env": {
+                "FLASK_APP": "app.py",
                 "FLASK_ENV": "development"
             },
             "args": [

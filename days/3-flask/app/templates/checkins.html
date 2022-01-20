@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="mui-table mui-table--bordered">
+    <thead>
+        <tr>
+            <th>Beer</th>
+            <th>Brewery</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    {% for checkin in checkins %}
+    <tr>
+        <td>{{ checkin.beer_name }}</td>
+        <td>{{ checkin.brewery_name }}</td>
+        <td>{{ checkin.created_at }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
