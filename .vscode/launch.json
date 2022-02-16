@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name":"Python: FastAPI day 12",
+            "type":"python",
+            "request":"launch",
+            "module":"uvicorn",
+            "cwd": "${workspaceFolder}/days/12-fastapi",
+            "args":["main:app", "--reload"],
+            "jinja":true
+        },
+        {
             "name": "Python: Flask day 1",
             "type": "python",
             "request": "launch",
