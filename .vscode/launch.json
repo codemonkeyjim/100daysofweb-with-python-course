@@ -1,49 +1,50 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name":"Python: FastAPI day 12",
-            "type":"python",
-            "request":"launch",
-            "module":"uvicorn",
-            "cwd": "${workspaceFolder}/days/12-fastapi",
-            "args":["main:app", "--reload"],
-            "jinja":true
-        },
-        {
-            "name": "Python: Flask day 1",
-            "type": "python",
-            "request": "launch",
-            "module": "flask",
-            "cwd": "${workspaceFolder}/days/1-flask",
-            "env": {
-                "FLASK_APP": "demo.py",
-                "FLASK_ENV": "development"
-            },
-            "args": [
-                "run",
-                "--no-debugger"
-            ],
-            "jinja": true
-        },
-        {
-            "name": "Python: Flask day 3",
-            "type": "python",
-            "request": "launch",
-            "module": "flask",
-            "cwd": "${workspaceFolder}/days/3-flask",
-            "env": {
-                "FLASK_APP": "app.py",
-                "FLASK_ENV": "development"
-            },
-            "args": [
-                "run",
-                "--no-debugger"
-            ],
-            "jinja": true
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: FastAPI day 12",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/days/12-fastapi",
+      "args": ["main:app", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "Python: Flask day 1",
+      "type": "python",
+      "request": "launch",
+      "module": "flask",
+      "cwd": "${workspaceFolder}/days/1-flask",
+      "env": {
+        "FLASK_APP": "demo.py",
+        "FLASK_ENV": "development"
+      },
+      "args": ["run", "--no-debugger"],
+      "jinja": true
+    },
+    {
+      "name": "Python: Flask day 3",
+      "type": "python",
+      "request": "launch",
+      "module": "flask",
+      "cwd": "${workspaceFolder}/days/3-flask",
+      "env": {
+        "FLASK_APP": "app.py",
+        "FLASK_ENV": "development"
+      },
+      "args": ["run", "--no-debugger"],
+      "jinja": true
+    }
+  ]
 }
